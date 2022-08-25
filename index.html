@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/24a476b79d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h2>Popup Chat Window</h2>
+    <button class="open-button" onclick="openForm()"><i class="fa fa-question-circle" aria-hidden="true"></i></button>
+
+    <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1 class="heading">Chat</h1>
+            <section>
+                <div class="container">
+                    <div class="message center">ChatClub: Welcome to the Chatroom, Say Hi!</div>
+                    <div class="message right ">hello sir how are you?
+                        and that's how its done
+                    </div>
+                    <div class="message left  ">scfsf</div>
+                </div>
+                <textarea rows="1" placeholder="Type message.." name="msg" required></textarea>
+            </section>
+
+            <div class="btnDiv">
+                <button type="submit" class="btn">Send</button>&ensp;&ensp;
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
